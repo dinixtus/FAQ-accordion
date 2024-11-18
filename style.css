@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
+
+* {
+    font-family: Work Sans;
+    font-size: 16px;
+}
+
+html {
+    background-color: hsl(275, 100%, 97%);
+}
+
+header {
+    width: 101%;
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    height: 400px;
+    z-index: -1;
+    position: relative;
+    top: -10px;
+    right: 10px;
+}
+
+.content {
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+
+main {
+    width: 550px;
+    background-color: hsl(0, 0%, 100%);
+    min-height: 550px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    z-index: 2;
+    position: relative;
+    top: -210px;
+
+}
+
+.mainHeader {
+    display: flex;
+    align-items: center;
+}
+
+.mainTitle {
+    font-size: 46px;
+    margin-left: 10px;
+}
+
+
+.buttonBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+}
+
+hr {
+    background-color: hsl(292, 16%, 49%);
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.buttonBlock a {
+    color: hsl(292, 42%, 14%);
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    width: 500px;
+    transition: 0.3s ease, 0.3s ease;
+}
+
+.buttonBlock a:hover {
+    font-size: 22px;
+    color: hsl(292, 16%, 49%);
+    transform: scale(1.00);
+}
+
+.plusButton, .minusButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s ease, 0.3s ease;
+    background-color:hsl(0, 0%, 100%)
+}
+
+.plusButton img, .minusButton img {
+    width: 28px;
+    height: 28px;
+}
+
+.buttonBlock button:hover {
+    width: 35px;
+    height: 35px;
+    transform: scale(1.05);
+}
+
+.buttonBlock button:hover img {
+    width: 35px;
+    height: 35px;
+    transform: scale(1.05);
+}
+
+.minusButton {
+    display: none;
+}
+
+.infoBlock {
+    display: none;
+}
+
+.infoBlock p {
+    font-weight: 500;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.active {
+    display: block;
+}
+
+@media (max-width: 650px) {
+    main {
+        width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    * {
+        font-size: 14px;
+    }
+    main {
+        width: 280px;
+    }
+    .buttonBlock a {
+        font-size: 18px;
+    }
+    .buttonBlock a:hover {
+        font-size: 19px;
+    }
+    header {
+        background-image: url('assets/images/background-pattern-mobile.svg');
+    }
+}
